@@ -3,5 +3,13 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def index(reqest):
-    return HttpResponse("Hello world!")
+def january(reqest):
+    return HttpResponse("Eat only meat for the entire month")
+
+
+def february(request):
+    return HttpResponse("Walk for at least 20 minutes every day")
+
+
+def monthly_challenge(request, month):
+    return HttpResponse(f"Challenge for {month}")
